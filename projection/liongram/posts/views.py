@@ -21,7 +21,7 @@ def post_list_view(request):
     }
     return render(request, 'posts/post_list.html',context)
 
-@login_required
+@login_required(login_url='/accounts/login/')
 def post_detail_view(request,id):
     if request.method=='GET':
         try:

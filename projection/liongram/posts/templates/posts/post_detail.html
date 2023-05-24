@@ -2,5 +2,5 @@
 {% block title %} 글상세 {% endblock%}
 {%block content%}
 <h1>Posts 상세 화면</h1>
-{% include 'mixin/posts/post_card.html' %}
+{% include 'mixin/posts/post_card.html' with detail=True %}
 {% endblock %}
